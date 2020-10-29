@@ -14,4 +14,8 @@ public class TraineeService {
         traineeRepository.save(trainee);
     }
 
+    public void deleteTrainee(long id) {
+        traineeRepository.deleteById(id);
+    }
+
 }

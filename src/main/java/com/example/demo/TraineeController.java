@@ -19,4 +19,10 @@ public class TraineeController {
     public void addTrainee(@RequestBody @Valid Trainee trainee) {
          traineeService.addNewTrainee(trainee);
     }
+
+    @DeleteMapping("/{trainee_id}")
+    @ResponseStatus(HttpStatus.NO_CONTENT)
+    public void deleteTrainee(@PathVariable Long trainee_id) {
+        traineeService.deleteTrainee(trainee_id);
+    }
 }
