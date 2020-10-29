@@ -21,5 +21,5 @@ public class Trainer {
     private long id;
     @NotEmpty(message = "name should not be null")
     private String name;
-    private Boolean grouped;
+    private Boolean grouped = false;
 }

@@ -7,6 +7,8 @@ import org.springframework.validation.annotation.Validated;
 import org.springframework.web.bind.annotation.*;
 
 import javax.validation.Valid;
+import java.util.List;
+import java.util.stream.Collectors;
 
 @RestController
 @RequestMapping("/trainees")
@@ -28,5 +30,10 @@ public class TraineeController {
     @ResponseStatus(HttpStatus.NO_CONTENT)
     public void deleteTrainee(@PathVariable Long trainee_id) {
         traineeService.deleteTrainee(trainee_id);
+    }
+
+    @GetMapping
+    public List<Trainee> getUngroupedTrainee() {
+        return traineeService.getUngroupedTrainee();
     }
 }
