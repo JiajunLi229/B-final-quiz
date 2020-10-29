@@ -1,5 +1,7 @@
-package com.example.demo;
+package com.example.demo.service;
 
+import com.example.demo.repository.TraineeRepository;
+import com.example.demo.domain.Trainee;
 import org.springframework.stereotype.Service;
 
 @Service
