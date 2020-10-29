@@ -1,8 +1,7 @@
 package com.example.demo.service;
 
-import com.example.demo.domain.Trainee;
 import com.example.demo.domain.Trainer;
-import com.example.demo.repository.TraineeRepository;
+
 import com.example.demo.repository.TrainerRepository;
 import org.springframework.http.HttpStatus;
 import org.springframework.stereotype.Service;

@@ -1,5 +1,5 @@
 package com.example.demo.controller;
-import com.example.demo.domain.Trainee;
+
 import com.example.demo.domain.Trainer;
 import com.example.demo.service.TrainerService;
 import org.springframework.http.HttpStatus;
@@ -8,7 +8,6 @@ import org.springframework.web.bind.annotation.*;
 
 import javax.validation.Valid;
 import java.util.List;
-import java.util.stream.Collectors;
 
 @Validated
 @RestController

@@ -3,24 +3,23 @@ package com.example.demo.service;
 import com.example.demo.domain.Group;
 import com.example.demo.domain.Trainer;
 import com.example.demo.repository.GroupRepository;
-import com.example.demo.repository.TraineeRepository;
+
 import com.example.demo.repository.TrainerRepository;
-import net.bytebuddy.implementation.bind.annotation.This;
+
 import org.springframework.stereotype.Service;
 
-import java.util.Collection;
+
 import java.util.Collections;
 import java.util.List;
-import java.util.Optional;
+
 
 @Service
 public class GroupService {
-    private final TraineeRepository traineeRepository;
+
     private final TrainerRepository trainerRepository;
     private final GroupRepository groupRepository;
 
-    public GroupService(TraineeRepository traineeRepository, TrainerRepository trainerRepository, GroupRepository groupRepository) {
-        this.traineeRepository = traineeRepository;
+    public GroupService(TrainerRepository trainerRepository, GroupRepository groupRepository) {
         this.trainerRepository = trainerRepository;
         this.groupRepository = groupRepository;
     }

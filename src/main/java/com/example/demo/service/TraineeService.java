@@ -1,13 +1,11 @@
 package com.example.demo.service;
 
-import com.example.demo.domain.Trainer;
 import com.example.demo.repository.TraineeRepository;
 import com.example.demo.domain.Trainee;
 import org.springframework.http.HttpStatus;
 import org.springframework.stereotype.Service;
 import org.springframework.web.server.ResponseStatusException;
 
-import javax.management.InstanceNotFoundException;
 import java.util.List;
 import java.util.stream.Collectors;
 
