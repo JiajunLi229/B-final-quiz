@@ -20,4 +20,11 @@ public class TrainerController {
     public void addTrainee(@RequestBody @Valid Trainer trainer) {
         trainerService.addNewTrainer(trainer);
     }
+
+    @DeleteMapping("/{trainer_id}")
+    @ResponseStatus(HttpStatus.NO_CONTENT)
+    public void deleteTrainee(@PathVariable Long trainer_id) {
+        trainerService.deleteTrainer(trainer_id);
+    }
 }
+
