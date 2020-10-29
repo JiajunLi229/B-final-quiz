@@ -3,12 +3,14 @@ package com.example.demo.controller;
 import com.example.demo.domain.Trainee;
 import com.example.demo.service.TraineeService;
 import org.springframework.http.HttpStatus;
+import org.springframework.validation.annotation.Validated;
 import org.springframework.web.bind.annotation.*;
 
 import javax.validation.Valid;
 
 @RestController
 @RequestMapping("/trainees")
+@Validated
 public class TraineeController {
     private final TraineeService traineeService;
 
