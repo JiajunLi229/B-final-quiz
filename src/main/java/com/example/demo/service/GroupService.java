@@ -32,6 +32,7 @@ public class GroupService {
         long IdOfTrainer = 1;
         long IdOfNextTrainer = IdOfTrainer + 1;
 
+        // TODO GTB-工程实践: - 变量名应使用驼峰命名，首字母小写
         int NumberOfTrainer = trainers.size();
         if (NumberOfTrainer % 2 == 0) {
             for (int i = NumberOfTrainer; i > 0; i--) {

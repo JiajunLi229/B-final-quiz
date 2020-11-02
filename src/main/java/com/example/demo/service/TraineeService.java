@@ -29,11 +29,13 @@ public class TraineeService {
     }
 
     public List<Trainee> getUngroupedTrainee() {
+        // TODO GTB-知识点: + 使用了stream过滤未分组学员
         List<Trainee> traineeList = traineeRepository.findAll()
                 .stream()
                 .filter(trainee -> trainee.getGrouped().equals(false))
                 .collect(Collectors.toList());
 
+        // TODO GTB-完成度: - 没有未分组学员时应返回空列表
         if (traineeList.size()== 0) {
             throw new ResponseStatusException(HttpStatus.NOT_FOUND, " no ungrouped trainee");
         }
